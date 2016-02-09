@@ -1,3 +1,11 @@
 language: node_js
 node_js:
-    - "node"
+- node
+deploy:
+  provider: npm
+  email: npmjs.com@blakemitchell.net
+  api_key:
+    secure: lxGlF+oCn0q0LK+e6zjgvijfLKocEXLdBevKAIqQYI3IvlsONWOiVWbd6yTY2Pq+MchX6/zDfobXyF56sNYR2JXO1fL8jhRVrE6BBwgrvxVRQuJn3IweKLf99uW4gNto8rGzKFYK5yEL4C9q6snGs/yVON4ywRY86ydqEdCnqEB7MijisOnagZ3J+6855hgX7xfw3yZNy4/1biP0kry9XzoW3X/60Qd3Lytjr/gmJvJWzcOLnic8AUVTC2JlmZ+G29RaPcZUKYemeB6LtY+CKlvYe+W7a8CxJLrNXoW8DKHS+2fiRcGexFAaASMajHWqtI5oSnkZn0QWUBgRiPeYS4eKmD3M4LXTDO8/AEMExHmuvkHLQgiY8gfyDbl+i2a9zOa6rMtGDHs5XsgynfjaUvnsqzx1zwyxBD4X/j1sBeHpJlG1D9eCvjtZIF/3cRoAgm5zAMTfyZuw1oOC5yqEIeb1NTSE50L8G+ijUfzV04+ilYzRU6YX3URI+6xGchRP6nMiu+PDpmUz4zmPnm/m/Xw5oBE57dSYUYzjbrqp8MXCx4iknxS+jMkwd8ZrcSWXcdzuI5hREBtq/nIjap3J4398aqRpof4MauBiHnpn21Q7Hj1dK/5sx8rgRuuO4C69sBocUHNLqCyLNkvBi3lpREj7M3xdGiDQrKKfSVgJiOA=
+  on:
+    tags: true
+    repo: kalahari/typescript-debug
