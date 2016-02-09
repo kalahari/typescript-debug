@@ -1,0 +1,38 @@
+{
+    "name": "typescript-debug",
+    "version": "0.1.0",
+    "description": "TypeScript decorator to conditionally trace method calls via https://github.com/visionmedia/debug",
+    "main": "./lib/index",
+    "scripts": {
+        "transpile": "tsd reinstall && tsc -p .",
+        "prepublish": "transpile",
+        "pretest": "transpile",
+        "test": "mocha test/test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kalahari/typescript-debug.git"
+    },
+    "keywords": [
+        "typescript",
+        "debug",
+        "trace"
+    ],
+    "author": "Blake Mitchell <blake@barkingspoon.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/kalahari/typescript-debug/issues"
+    },
+    "homepage": "https://github.com/kalahari/typescript-debug#readme",
+    "devDependencies": {
+        "chai": "^3.5.0",
+        "mocha": "^2.4.5",
+        "proxyquire": "^1.7.4",
+        "tsd": "^0.6.5",
+        "tslint": "^3.3.0",
+        "typescript": "^1.7.5"
+    },
+    "dependencies": {
+        "debug": "^2.2.0"
+    }
+}
