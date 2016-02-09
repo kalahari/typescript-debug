@@ -36,4 +36,4 @@ blake@ignignokt:~/example$ DEBUG=\* node trace-example.js
   example:TraceExample getAbc: ABC +0ms
   example:TraceExample combineWithAbc: ABC and XYZ +0ms
 ```
-> Note that the output is normally colorized by in your console `debug`.
+> Note that the output is normally colorized in your console by `debug`.
