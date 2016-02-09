@@ -5,8 +5,8 @@
     "main": "./lib/index",
     "scripts": {
         "transpile": "tsd reinstall && tsc -p .",
-        "prepublish": "transpile",
-        "pretest": "transpile",
+        "prepublish": "npm run transpile",
+        "pretest": "npm run transpile",
         "test": "mocha test/test"
     },
     "repository": {
